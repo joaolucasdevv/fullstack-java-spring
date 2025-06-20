@@ -2,7 +2,7 @@ package com.fullstack.cardapio.entity;
 
 import jakarta.persistence.*;
 
-@Entity(name = "foods")
+@Entity
 @Table(name = "foods")
 public class Food {
 
