@@ -1,6 +1,7 @@
 package com.fullstack.cardapio.controller;
 
 
+import com.fullstack.cardapio.dto.FoodResponseDTO;
 import com.fullstack.cardapio.entity.Food;
 import com.fullstack.cardapio.repository.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class FoodController {
     @GetMapping
     public List<FoodResponseDTO> getAll(){
 
-        List<Food> foodList = repository.findAll();
+        List<Food> foodList = repository.findAll().stream().map(FoodResponseDTO::new);
         return foodList;
 
     }
