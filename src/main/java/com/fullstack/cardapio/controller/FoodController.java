@@ -5,10 +5,7 @@ import com.fullstack.cardapio.dto.FoodResponseDTO;
 import com.fullstack.cardapio.entity.Food;
 import com.fullstack.cardapio.repository.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -20,7 +17,7 @@ public class FoodController {
     private FoodRepository repository;
 
     @PostMapping
-    public void saveFood() {
+    public void saveFood(@RequestBody FoodRequestDTO data) {
 
     }
 
