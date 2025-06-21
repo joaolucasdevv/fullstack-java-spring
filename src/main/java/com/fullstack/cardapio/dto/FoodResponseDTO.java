@@ -5,7 +5,7 @@ import com.fullstack.cardapio.entity.Food;
 public record FoodResponseDTO(Long id, String title, String image, Integer price) {
 
     public FoodResponseDTO(Food food) {
-        this(food.id)
+        this(food.getId(), food.getTitle(), food.getImage(), food.getPrice());
     }
 
 }
