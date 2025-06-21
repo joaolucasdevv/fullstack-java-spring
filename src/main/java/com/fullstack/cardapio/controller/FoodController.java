@@ -1,8 +1,8 @@
 package com.fullstack.cardapio.controller;
 
 
+import com.fullstack.cardapio.dto.FoodRequestDTO;
 import com.fullstack.cardapio.dto.FoodResponseDTO;
-import com.fullstack.cardapio.entity.Food;
 import com.fullstack.cardapio.repository.FoodRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
