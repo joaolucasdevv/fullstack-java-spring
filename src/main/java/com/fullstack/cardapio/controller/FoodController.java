@@ -18,7 +18,7 @@ public class FoodController {
 
     @PostMapping
     public void saveFood(@RequestBody FoodRequestDTO data) {
-
+        repository.save(data);
     }
 
     @GetMapping
