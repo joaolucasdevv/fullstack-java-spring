@@ -1,4 +1,4 @@
-import "./card/card.css"
+import "./card.css"
 
 interface CardProps {
     price: number,
