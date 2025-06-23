@@ -15,4 +15,10 @@ export function useFoodData() {
         queryKey: ['food-data'],
         retry: 2
     })
+
+    return {
+    ...query,
+    data: query.data?.data
+    }
 }
+
