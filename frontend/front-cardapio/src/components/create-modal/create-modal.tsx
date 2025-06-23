@@ -1,3 +1,9 @@
+interface InputProps {
+    label: string,
+    value: string | number,
+    updateValue(value: string | number): void
+}
+
 const Input = ({ label, value, updateValue }: InputProps) => {
     return (
         <>
