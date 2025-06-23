@@ -3,7 +3,7 @@ import { useState } from "react"
 interface InputProps {
     label: string,
     value: string | number,
-    updateValue(value: string | number): void
+    updateValue(value: any): void
 }
 
 const Input = ({ label, value, updateValue }: InputProps) => {
