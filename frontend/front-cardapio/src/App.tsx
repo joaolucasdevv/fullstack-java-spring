@@ -1,5 +1,6 @@
 
 import './App.css'
+import { Card } from './components/card/card';
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <div className="container">
       <h1>Cardápio</h1>
       <div className="card-grid">
-
+        {data.map(foodData => <Card/>)}
       </div>
     </div>
   )
