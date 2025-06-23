@@ -7,11 +7,8 @@ const Input = ({ label, value, updateValue }: InputProps) => {
     )
 }
 
-interface CreateModalProps {
 
-}
-
-export function CreateModalProps(props : CreateModalProps) {
+export function CreateModalProps() {
     return (
         <div className="modal-overlay">
             <div className="modal-body">
