@@ -1,3 +1,5 @@
+import { useState } from "react"
+
 interface InputProps {
     label: string,
     value: string | number,
@@ -15,14 +17,19 @@ const Input = ({ label, value, updateValue }: InputProps) => {
 
 
 export function CreateModalProps() {
+    const [title, setTitle] = useState("");
+    const [price, setPrice] = useState(0);
+    const [image, setImage] = useState("");
+     
+
     return (
         <div className="modal-overlay">
             <div className="modal-body">
                 <h2>Cadastre um novo item no Cardápio</h2>
                 <form className="input-container">
-                    <Input label="title" value={} updateValue={}/>
-                    <Input label="price" value={} updateValue={}/>
-                    <Input label="image" value={} updateValue={}/>
+                    <Input label="title" value={title} updateValue={setTitle}/>
+                    <Input label="price" value={price} updateValue={setPrice}/>
+                    <Input label="image" value={image} updateValue={setImage}/>
                 </form>
             </div>
         </div>
