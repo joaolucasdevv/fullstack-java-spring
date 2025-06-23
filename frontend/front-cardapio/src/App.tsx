@@ -2,7 +2,6 @@
 import './App.css'
 import { Card } from './components/card/card';
 import { useFoodData } from './hooks/useFoodData';
-import type { FoodData } from './interface/FoodData';
 
 function App() {
 
