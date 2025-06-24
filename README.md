@@ -49,7 +49,8 @@ dados atualizados.
 
 ### Olhando mais a fundo através do Postman:
 Vamos observar nosso backend mais de perto, para ver como ele está inserindo as informações no nosso
-banco de dados
+banco de dados:
+
 ![postman](/img/postman.png)
 Utilizando o Postman com o método GET conseguimos visualizar todos os dados armazenados no banco,
 inclusive os que foram inseridos através do nosso frontend, veja que mesmo não tendo opção para inserir
