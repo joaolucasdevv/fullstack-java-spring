@@ -55,3 +55,26 @@ Utilizando o Postman com o método GET conseguimos visualizar todos os dados arm
 inclusive os que foram inseridos através do nosso frontend, veja que mesmo não tendo opção para inserir
 o atributo "id" cada objeto tem um atributo "id", que foi configurado em nosso backend para que cada objeto
 inserido no banco de dados receba um valor de "id" sequêncial.
+
+## Como executar o projeto
+
+### Backend (Java Spring Boot)
+
+1. Certifique-se de que o banco de dados **PostgreSQL** está instalado e configurado.
+2. No projeto backend, localize e execute a classe `CardapioApplication` para iniciar a aplicação Spring Boot.
+3. Eu utilizei o **IntelliJ IDEA** para rodar o backend, mas você pode utilizar qualquer IDE compatível com projetos Java/Spring.
+
+### Frontend (React + TypeScript)
+
+1. Acesse a pasta `frontend/front-cardapio`.
+2. Certifique-se de ter o **Node.js** instalado na sua máquina (necessário para rodar o `npm run dev`).
+3. No terminal, dentro da pasta `front-cardapio`, instale as dependências com o comando:
+
+    ```bash
+    npm install
+    ```
+4. Após instalar as dependências, inicie a aplicação com:
+    ```bash
+    npm run dev
+    ```
+5. Eu utilizei o **Visual Studio Code(VSCode)** para rodar o frontend.
