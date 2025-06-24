@@ -1,3 +1,5 @@
+import "./create-modal.css"
+
 import { useState } from "react"
 import { useFoodDataMutate } from "../../hooks/useFoodDataMutate";
 import type { FoodData } from "../../interface/FoodData";
@@ -43,8 +45,8 @@ export function CreateModal() {
                     <Input label="price" value={price} updateValue={setPrice}/>
                     <Input label="image" value={image} updateValue={setImage}/>
                 </form>
-            </div>
-            <button onClick={submit} className="btn-secondary">postar</button>
+                <button onClick={submit} className="btn-secondary">postar</button>
+            </div>        
         </div>
     )
 }
