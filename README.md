@@ -12,3 +12,4 @@ dados armazenados no banco, como também receber novos dados do frontend.
                 como getters, setters e constructors.
   * **Spring Data JPA**:  utilizamos para fazer a persistência e manuzeio de dados SQL com Java Spring
   * **PostgreSQL Driver**: utilizado para conseguirmos conectar a nossa aplicação com o banco de dados PostgreSQL.
+* **PostgreSQL**
