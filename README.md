@@ -16,5 +16,7 @@ dados armazenados no banco, como também receber novos dados do frontend.
 #### Frontend:
 * **React + Typescript**
   * **Tanstack Query**: biblioteca utilizada para gerenciar o estado assíncrono de dados 
-                        no React, ou seja: buscar e postar os dados da nossa API
-  * 
+                        no React, ou seja: buscar dados da API, cache automático, revalidação
+                        automática e controle de carregamento.
+  * **Axios**: biblioteca utilizada para fazer requisições HTTP (GET, POST, PUT, DELETE) de forma simples.
+
