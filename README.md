@@ -23,6 +23,7 @@ dados armazenados no banco, como também recebe novos dados do frontend.
 
 ### Estrutura das pastas no backend:
 ![estrutura das pastas](/img/estruturapastasback.png)
+
 Veja que utilizamos Record para criar nossos DTO's. Os Records em Java são imutáveis por padrão e automaticamente geram
 métodos getters, equals(), hashCode(), toString() e constructors. Dessa forma, o código fica mais limpo e adrquado para
 data transfer objects (DTO's).
@@ -32,16 +33,21 @@ a integração entre o backend e o frontend.
 
 ### Método GET:
 ![GET](/img/sempizza.png)
+
 Aqui já podemos observar a aplicação WEB rodando e sendo servida pela nossa API, veja que o método **GET**
 é realizado assim que carregamos nossa aplicação.
 
 ### Método POST:
 No nosso frontend colocamos um botão "novo" no canto inferior direito, clicando nele abrimos este formulário
 onde podemos preencher os dados de uma nova comida para ser inserida no cardápio com o método POST
+
 ![POST](/img/metodoPOST.png)
+
 Veja que podemos inserir o "title" que será o nome da comida, o "price" que é o preço e a "img" que é onde
 colocaremos um link de alguma imagem para ser inserida no banco de dados juntamente com os outros dados
+
 ![pizza inserida](/img/compizza.png)
+
 Método POST realizado com sucesso e inserido no nosso backend, veja que assim que inserimos a nossa aplicação
 já mostra esse novo dado, utilizamos a biblioteca Tanstack React justamente para isso: assim que inserimos um
 novo dado, ela invalida o GET anterior e já realiza um novo e atualiza a página em tempo real, mostrando os
@@ -52,6 +58,7 @@ Vamos observar nosso backend mais de perto, para ver como ele está inserindo as
 banco de dados:
 
 ![postman](/img/postman.png)
+
 Utilizando o Postman com o método GET conseguimos visualizar todos os dados armazenados no banco,
 inclusive os que foram inseridos através do nosso frontend, veja que mesmo não tendo opção para inserir
 o atributo "id" cada objeto tem um atributo "id", que foi configurado em nosso backend para que cada objeto
