@@ -20,3 +20,5 @@ dados armazenados no banco, como também receber novos dados do frontend.
                         automática e controle de carregamento.
   * **Axios**: biblioteca utilizada para fazer requisições HTTP (GET, POST, PUT, DELETE) de forma simples.
 
+### Estrutura das pastas no backend:
+![estrutura das pastas](/img/estruturapastasback.png)
