@@ -1,4 +1,4 @@
-# Carápio digital
+# Cardápio Digital - Projeto Fullstack com Java Spring Boot e React
 ## Objetivo:
 Desenvolver uma aplicação **fullstack**, onde nossa **API REST** serve o frontend com os
 dados armazenados no banco, como também recebe novos dados do frontend.
@@ -10,7 +10,7 @@ dados armazenados no banco, como também recebe novos dados do frontend.
   * **Spring Web**: utilizado para construir nossa aplicação web.
   * **Lombok**: biblioteca que serve para, através de anotações, reduzir a necessidade de escrever código boilerplate, 
                 como getters, setters e constructors.
-  * **Spring Data JPA**:  utilizado para fazer a persistência e manuzeio de dados SQL com Java Spring
+  * **Spring Data JPA**:  utilizado para fazer a persistência e manuseio de dados SQL com Java Spring
   * **PostgreSQL Driver**: utilizado para conseguirmos conectar a nossa aplicação com o banco de dados PostgreSQL.
 * **PostgreSQL**
 * **Postman**
@@ -23,16 +23,16 @@ dados armazenados no banco, como também recebe novos dados do frontend.
 
 ### Estrutura das pastas no backend:
 ![estrutura das pastas](/img/estruturapastasback.png)
-Veja que para criarmos nossos DTO's utilizamos Record em vez de Classes, o Record é imutável por padrão
-ele gera automáticamente os getters, equals, hashCodes, constructors, logo, fica com menos código e mais limpo
-ótimo para objetos que servem para carregar dados como o DTO.
+Veja que utilizamos Record para criar nossos DTO's. Os Records em Java são imutáveis por padrão e automaticamente geram
+métodos getters, equals(), hashCode(), toString() e constructors. Dessa forma, o código fica mais limpo e adrquado para
+data transfer objects (DTO's).
 
 Eu desenvolvi essa aplicação somente com os métodos de **GET** e **POST**, pois, a intenção era justamente realizar
 a integração entre o backend e o frontend.
 
 ### Método GET:
 ![GET](/img/sempizza.png)
-Aqui já podemos obervar a aplicação WEB rodando e sendo servida pela nossa API, veja que o método **GET**
+Aqui já podemos observar a aplicação WEB rodando e sendo servida pela nossa API, veja que o método **GET**
 é realizado assim que carregamos nossa aplicação.
 
 ### Método POST:
@@ -48,3 +48,10 @@ novo dado, ela invalida o GET anterior e já realiza um novo e atualiza a págin
 dados atualizados.
 
 ### Olhando mais a fundo através do Postman:
+Vamos observar nosso backend mais de perto, para ver como ele está inserindo as informações no nosso
+banco de dados
+![postman](/img/postman.png)
+Utilizando o Postman com o método GET conseguimos visualizar todos os dados armazenados no banco,
+inclusive os que foram inseridos através do nosso frontend, veja que mesmo não tendo opção para inserir
+o atributo "id" cada objeto tem um atributo "id", que foi configurado em nosso backend para que cada objeto
+inserido no banco de dados receba um valor de "id" sequêncial.
