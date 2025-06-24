@@ -44,6 +44,7 @@ export function CreateModalProps() {
                     <Input label="image" value={image} updateValue={setImage}/>
                 </form>
             </div>
+            <button onClick={submit} className="btn-secondary">postar</button>
         </div>
     )
 }
